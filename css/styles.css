@@ -10133,3 +10133,7 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+/* my own additions */
+.tab {
+  padding-left: 10px;
+}
