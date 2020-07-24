@@ -28,6 +28,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#blog">Blog</a></li>
                 </ul>
             </div>
@@ -168,6 +169,53 @@
                     <h2 class="mb-5">Interests</h2>
                     <p>I have always been interested in both human and machine languages. In a prior life I was a linguist for the U.S. Navy. I loved the time I spent serving and, as a bonus, it gave the greatest gift in allowing me to learn both <a href="https://en.wikipedia.org/wiki/Hausa_language" target='_blank'>Hausa</a> and <a href="https://en.wikipedia.org/wiki/Mandarin_Chinese" target='_blank'>Mandarin Chinese</a>. I followed this up with over four years in ancient Greek, and two studying written French. My new love is Python, and most of my time nowadays is spent using Python to find Data Science solutions.</p>
                     <p class="mb-0">When I'm not playing around with Python and Data Science, you can usually find me relaxing with some video games (Xbox GT: <a href="https://xboxgamertag.com/search/Landbanana" target='_blank'>landbanana</a>), or in a good book--I'm always looking for recommendations!. I also enjoy unwinding with my wife of over 8 years, Christine, and our 1 year old twins, Kassandra and Chiron. They're a handful, but my wife and I make it look easy...so far.</p>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Projects-->
+            <section class="resume-section" id="projects">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Projects</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Part-of-speech tagger for inflected ancient Greek</h3>
+                            <div class="subheading mb-3">Capstone Project for General Assembly Data Science Immersive</div>
+                            <p>In this project I leveraged Tensorflow to create a POS tagger, then deployed this to the web.
+                            <div class="subheading mb-1">Tools used:</div>
+                            <ul class="fa-ul mb-2">
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Python</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>pyconll</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Pandas</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Tensorflow</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>NLTK</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Flask</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>HTML</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>CSS</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Heroku</li>
+                            </ul>
+                            <p>Ancient Greek has always been the lesser-taught of the two classical languages (ancient Greek and Latin). Most of the classical language tools, apps, and programs are built specifically for Latin or with ancient Greek as a kind of 'stretch-goal'. In the past decade, NLP has made great strides (digital assistants like Alexa and Siri, bots, Google translate, etc.) and there are a ton of tools out there for processing and modeling modern languages. However, once again, ancient Greek gets none of the NLP love.</p>
+                            <p>For this project I used pre-tagged data from Universal Dependencies, which was then cleaned, tokenized, and vectorized into character-level matrices using Keras with a Tensorflow back-end. Then I trained multiple CNNs on the data, concatenating their outputs before using a Dense layer to predict the POS tag. I then deployed my model to the web using Flask, Gunicorn, and Heroku. The web app takes user input in the form of a string and returns the predicted POS tags.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">July 2020</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">COVID-19 Twitter Sentiment Analysis</h3>
+                            <div class="subheading mb-3">Client/Group Project for General Assembly Data Science Immersive</div>
+                            <p>For this group project, my team analyzed the sentiments of tweets from across the U.S. to see if states' differing responses to COVID-19 affected Twitter users' attitudes. We used:
+                                <div class="subheading mb-2">Tools used:</div>
+                                <ul class="fa-ul mb-2">
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Python</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>GetOldTweets3</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>spaCy</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>CountVectorizer</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>VaderSentiment</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Matplotlib</li>
+                                </ul>
+                            We worked with GetOldTweets3 to get tweets from key cities in states with the most severe and least severe lockdown measures during most of April 2020. As a control, we also pulled tweets from the same cities and dates from 2019. We ended up with more than 700,000 tweets from twenty cities. We then used spaCy to process the text data and VaderSentiment for sentiment analyziz. Finally, we plotted the sentiments to identify trends and connections. However, tweet sentiments didn't seem to be affected by differences in statewide policies responding to COVID-19, nor did sentiments change much between 2019 and 2020.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2020</span></div>
+                    </div>
                 </div>
             </section>
             <hr class="m-0" />
