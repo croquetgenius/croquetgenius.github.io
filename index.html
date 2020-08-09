@@ -110,7 +110,7 @@
                     <h2 class="mb-5">Experience</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Intern</h3>
+                            <h3 class="mb-0">Research Intern</h3>
                             <div class="subheading mb-2">University of Texas at Austin</div>
                             <ul>
                                 <li>Assisted in daily lesson planning for intensive ancient Greek instruction</li>
@@ -119,6 +119,35 @@
                             </ul>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">June 2018 - August 2018</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Cryptologic Direct Support Operator</h3>
+                            <div class="subheading mb-2">Advanced Language Response Team, U.S. Navy</div>
+                            <ul>
+                                <li>Acquired proficiency in Hausa, becoming one of only four active Hausa linguists in the IC</li>
+                                <li>Supported TOPI for six months as their only Hausa linguist during a period of increased focus on the region</li>
+                                <li>Managed training and qualifications for direct support division</li>
+                                <li>Streamlined pre-deployment training pipeline to ensure maximum mission readiness</li>
+                                <li>Scheduled numerous annual language tests and significant language training events in multiple locations</li>
+                                <li>Supported ad-hoc remote mission surge in support of Fleet Information Operations Command Hawaii during an 84-day period of austere manning, resulting in the processing and reporting of over 2,800 signals of interest</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">July 2012 - August 2015</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Department Collections Officer</h3>
+                            <div class="subheading mb-2">National Security Agency</div>
+                            <ul>
+                                <li>Responsible for the successful planning, development, implementation, and evaluation of collection strategies from a multi-int perspective</li>
+                                <li>Responsible for monitoring one of the Intelligence Community’s hardest targets</li>
+                                <li>Liaison between the collection management and analysis/production branches at NSA/CSS Hawaii</li>
+                                <li>Department authority on collection policy</li>
+                                <li>Held TS/SCI Clearance</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">March 2010 - July 2012</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
@@ -186,40 +215,39 @@
                     <h2 class="mb-5">Projects</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Part-of-speech tagger for inflected ancient Greek</h3>
-                            <div class="subheading mb-3">Capstone Project for General Assembly Data Science Immersive</div>
+                            <h3 class="mb-0"><a href="https://github.com/croquetgenius/POS-tagger" target='_blank'>Part-of-speech tagger for inflected ancient Greek</a></h3>
                             <p>In this project I leveraged Tensorflow to create a POS tagger, then deployed this to the web.
                             <div class="subheading mb-1">Tools used:</div>
-                            <ul class="fa-ul mb-2">
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Python</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>pyconll</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Pandas</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Tensorflow</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>NLTK</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Flask</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>HTML</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>CSS</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Heroku</li>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><i class="fas fa-check"></i></span>Python</li>
+                                <li class="list-inline-item"><i class="fas fa-check"></i></span>pyconll</li>
+                                <li class="list-inline-item"><i class="fas fa-check"></i></span>Pandas</li>
+                                <li class="list-inline-item"><i class="fas fa-check"></i></span>Tensorflow</li>
+                                <li class="list-inline-item"><i class="fas fa-check"></i></span>NLTK</li>
+                                <li class="list-inline-item"><i class="fas fa-check"></i></span>Flask</li>
+                                <li class="list-inline-item"><i class="fas fa-check"></i></span>HTML</li>
+                                <li class="list-inline-item"><i class="fas fa-check"></i></span>CSS</li>
+                                <li class="list-inline-item"><i class="fas fa-check"></i></span>Heroku</li>
                             </ul>
                             <p>Ancient Greek has always been the lesser-taught of the two classical languages (ancient Greek and Latin). Most of the classical language tools, apps, and programs are built specifically for Latin or with ancient Greek as a kind of 'stretch-goal'. In the past decade, NLP has made great strides (digital assistants like Alexa and Siri, bots, Google translate, etc.) and there are a ton of tools out there for processing and modeling modern languages. However, once again, ancient Greek gets none of the NLP love.</p>
-                            <p>For this project I used pre-tagged data from Universal Dependencies, which was then cleaned, tokenized, and vectorized into character-level matrices using Keras with a Tensorflow back-end. Then I trained multiple CNNs on the data, concatenating their outputs before using a Dense layer to predict the POS tag. I then deployed my model to the web using Flask, Gunicorn, and Heroku. The web app takes user input in the form of a string and returns the predicted POS tags.</p>
+                            <p>For this project I used pre-tagged data from Universal Dependencies, which was then cleaned, tokenized, and vectorized into character-level matrices using Keras with a Tensorflow back-end. Then I trained multiple CNNs on the data, concatenating their outputs before using a Dense layer to predict the POS tag. I then deployed my model to the web using Flask, Gunicorn, and Heroku. <a href="https://dsir-tagger.herokuapp.com/" target='_blank'>The web app</a> takes user input in the form of a string and returns the predicted POS tags.</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">July 2020</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">COVID-19 Twitter Sentiment Analysis</h3>
-                            <div class="subheading mb-3">Client/Group Project for General Assembly Data Science Immersive</div>
+                            <h3 class="mb-0"><a href="https://github.com/croquetgenius/covid_sentiment_analysis" target='_blank'>COVID-19 Twitter Sentiment Analysis</a></h3>
+                            <div class="subheading mb-3">Client Project</div>
                             <p>For this group project, my team analyzed the sentiments of tweets from across the U.S. to see if states' differing responses to COVID-19 affected Twitter users' attitudes. We used:
                                 <div class="subheading mb-2">Tools used:</div>
-                                <ul class="fa-ul mb-2">
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Python</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>GetOldTweets3</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>spaCy</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>CountVectorizer</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>VaderSentiment</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Matplotlib</li>
-                                </ul>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><i class="fas fa-check"></i></span>Python</li>
+                                        <li class="list-inline-item"><i class="fas fa-check"></i></span>GetOldTweets3</li>
+                                        <li class="list-inline-item"><i class="fas fa-check"></i></span>spaCy</li>
+                                        <li class="list-inline-item"><i class="fas fa-check"></i></span>CountVectorizer</li>
+                                        <li class="list-inline-item"><i class="fas fa-check"></i></span>VaderSentiment</li>
+                                        <li class="list-inline-item"><i class="fas fa-check"></i></span>Matplotlib</li>
+                                    </ul>
                             We worked with GetOldTweets3 to get tweets from key cities in states with the most severe and least severe lockdown measures during most of April 2020. As a control, we also pulled tweets from the same cities and dates from 2019. We ended up with more than 700,000 tweets from twenty cities. We then used spaCy to process the text data and VaderSentiment for sentiment analyziz. Finally, we plotted the sentiments to identify trends and connections. However, tweet sentiments didn't seem to be affected by differences in statewide policies responding to COVID-19, nor did sentiments change much between 2019 and 2020.</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">June 2020</span></div>
